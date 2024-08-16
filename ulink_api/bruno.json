@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "ulink",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

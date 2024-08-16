@@ -7,7 +7,9 @@ export const enviroment = {
         url: process.env.DATABASE_URL,
     },
     supabase:{
-        url: process.env.SUPABASE_URL,
-        key: process.env.SUPABASE_KEY,
+        url: process.env.SUPA_BASE_PROJECT_URL,
+
+        api: process.env.SUPA_BASE_API,
+        direct_url:process.env.DIRECT_URL,
     }
 };
