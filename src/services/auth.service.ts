@@ -33,6 +33,9 @@ export class AuthService {
       const { error, data } = await this.supabase.auth.signUp({
         email,
         password,
+       options:{emailRedirectTo:"http://localhost:3000/auth/confirm",data:{role:"user"}}
+       
+       
       });
       
       if (error){
