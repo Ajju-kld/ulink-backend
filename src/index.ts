@@ -2,7 +2,7 @@ import express from "express";
 import requestLogger from "./middleware/requestLogger";
 import errorHandler from "./middleware/error.middleware";
 import { connectDB, disconnectDB } from "./database/connection";
-import authRouter from "./routes/auth.routes";
+
 
 const app = express();
 const port = 3000;
@@ -12,7 +12,7 @@ app.use(requestLogger);
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
-app.use('/auth',authRouter);
+
 app.use(errorHandler);
 
 async function startServer() {
